@@ -10,7 +10,7 @@ spec:
     - ReadWriteMany              # Set the access mode for NFS
   nfs:
     path: /data     # default path of sfs in e2e
-    server: 10.12.148.7          # Your NFS server's IP
+    server: sfs ip         # Your NFS server's IP
     readOnly: false              # Set to true if you want it to be read-only
   persistentVolumeReclaimPolicy: Retain  # Retain, Recycle, or Delete after use
 
