@@ -1,0 +1,29 @@
+I didn’t include those details in the previous documentation. Here’s the revised section with the explanation of why tokens are used in Kubernetes:
+
+---
+
+## 1. **Using Tokens in Kubernetes**
+
+### 1.1 Why Use Tokens?
+
+Tokens are essential in Kubernetes for several reasons:
+
+- **Authentication**: Tokens serve as a means to verify the identity of users or service accounts when they interact with the Kubernetes API. Each request made to the API is accompanied by a token, which the API server checks to confirm who is making the request.
+
+- **Authorization**: Once authenticated, Kubernetes determines what actions the authenticated user or service account can perform. This is facilitated through Role-Based Access Control (RBAC) or Attribute-Based Access Control (ABAC), where tokens link users to their associated permissions defined by roles and role bindings.
+
+- **Service Accounts**: For applications running in pods, service accounts are used to manage API access securely. Each service account has its own token, enabling applications to authenticate to the API server automatically, without requiring user intervention. This is especially useful for automated processes, CI/CD pipelines, and microservices communication.
+
+- **Secure Access**: Tokens are typically used over HTTPS, ensuring that communication between the client and the server remains secure.
+
+- **Token Management**: Tokens can have expiration times, and Kubernetes can manage the renewal of tokens automatically for service accounts, ensuring that long-running processes have valid credentials without manual intervention.
+
+### 1.2 Example Use Cases
+
+- **CI/CD Pipelines**: In automated deployment scenarios, tokens authenticate processes that deploy applications to Kubernetes clusters.
+  
+- **Microservices Communication**: In a microservices architecture, service accounts and their tokens enable services to communicate securely with the Kubernetes API for managing configurations and accessing secrets.
+
+---
+
+Feel free to add this section to your existing documentation. If you need further adjustments or additional information, just let me know!
