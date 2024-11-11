@@ -92,4 +92,4 @@ ls /mnt/data
 This setup ensures your volume is properly mounted and ready for use on your VM.
 ```
 
-This `README.md` file provides a complete setup guide and can be added to your Git repository.
+If you are making the snapshot and converting that snap to volume, should not do mkfs steps, can directly mount.
