@@ -1,7 +1,6 @@
 
 ---
 
-### ✅ **Your Points (Correct)**
 1. **Jenkins Needs EC2 (Self-Managed Costs):**  
    - You need to provision an **EC2 instance** (or multiple for master-slave architecture).  
    - You pay for uptime **even when idle**.  
